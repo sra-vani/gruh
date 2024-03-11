@@ -1,0 +1,55 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .invitation {
+    background-color:#BFD8AF;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 400px; /* Adjust the height as needed */
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+    font-family: cancun;
+  }
+  .invitation-image {
+    max-width: 100px; /* Adjust the maximum width as needed */
+    height: auto;
+    margin-top: 10px; /* Adjust spacing as needed */
+  }
+    
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+    transform: rotateY(180deg);
+  }
+  .invitation.flipped .content {
+    transform: rotateY(180deg);
+  }
+  
+  .invitation.flipped .back {
+    transform: rotateY(0deg);
+  }
